@@ -7,7 +7,7 @@ const Header = () => {
       
 
       <div className="">
-        <Navbar></Navbar>
+        
       </div>
       <div className="mt-5">
       <Banner></Banner>
