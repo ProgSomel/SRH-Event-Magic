@@ -1,13 +1,34 @@
 // src/components/Login.js
 import React from 'react';
+import { useContext } from 'react';
+import toast from 'react-hot-toast';
+import { FcGoogle } from 'react-icons/fc';
+import { AuthContext } from '../../firebase/AuthProvider';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+
+    const {signInWithGoogle} = useContext(AuthContext)
+    const navigate = useNavigate();
+
+
+    const handleSignIn = (media) => {
+        media()
+        .then(res=>{
+            toast.success('Successfully logged In')
+            navigate('/')
+        })
+        .catch(err => {
+            toast.error(err.message)
+        })
+
+    }
   return (
     <div className="flex  bg-gradient-to-r from-green-200 via-blue-100 to-green-100 py-9 ">
       <div className="m-auto">
         <div className="max-w-md w-full space-y-8 p-8 bg-orange-200 bg-opacity-80 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Login</h2>
-          <form className="mt-8 space-y-6">
+          <form  className="mt-8 space-y-6">
             <div>
               <label htmlFor="email" className="block text-gray-800">Email</label>
               <input
@@ -35,10 +56,12 @@ const Login = () => {
               >
                 Login
               </button>
+              <p className='text-center mt-3'>Or continue With</p>
+              <p onClick={()=> handleSignIn(signInWithGoogle)} className='flex justify-center mt-2'><FcGoogle></FcGoogle></p>
             </div>
           </form>
-          <p className="text-gray-800 text-center text-sm mt-4">
-            New user? <a href="/register" className="text-blue-500">Register</a>
+          <p className="text-gray-800 text-center text-sm">
+            New user? <Link to="/register" className="text-blue-500">Register</Link>
           </p>
         </div>
       </div>
