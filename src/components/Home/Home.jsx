@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
 import Services from "../Services/Services";
 import Reviews from "../Reviews/Reviews";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
 
@@ -9,10 +10,11 @@ const Home = () => {
 
     console.log(services);
     return (
-        <div>
+        <div className="">
             <Header></Header>
             <Services services={services}></Services>
             <Reviews></Reviews>
+            <Footer></Footer>
         </div>
     );
 };

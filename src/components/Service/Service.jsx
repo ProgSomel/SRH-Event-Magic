@@ -15,7 +15,7 @@ const Service = ({ service }) => {
         <h2 className="card-title text-2xl italic text-[#FFC95F]">{name}</h2>
         <p className="font-extralight">{description}</p>
         <div className=" ">
-          <button className="btn btn-outline btn-success w-full" >See Details</button>
+          <button className="btn  bg-[#F9DEC9] w-full" >See Details</button>
         </div>
       </div>
     </div>

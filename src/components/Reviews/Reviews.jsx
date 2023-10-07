@@ -15,7 +15,7 @@ const Reviews = () => {
     }, [])
 
     return (
-        <div className="ml-4">
+        <div className="max-w-screen-2xl mx-auto px-4 md:px-8 lg:px-16 ">
             <h2 className="text-7xl  italic  font-extralight text-[#6A9C89] mt-12" data-aos="fade-right">Reviews</h2>
         <Marquee pauseOnHover >
             <div className="">
