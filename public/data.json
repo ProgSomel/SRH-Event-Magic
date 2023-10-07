@@ -1,46 +1,352 @@
-[
-      {
-        "id": 1,
-        "name": "Wedding Planning",
-        "image": "https://i.ibb.co/mXdhFkT/wedding.jpg",
-        "price": 2500,
-        "description": "Let us make your dream wedding a reality. Our expert wedding planners will handle every detail."
+ [
+    {
+      "id": 1,
+      "name": "Wedding Planning",
+      "image": "https://i.ibb.co/mXdhFkT/wedding.jpg",
+      "price": 2500,
+      "description": "Let us make your dream wedding a reality. Our expert wedding planners will handle every detail.",
+      "duration": "Full day celebration",
+      "venue_options": "Multiple venue options available",
+      "included_services": [
+        "Catering",
+        "Floral arrangements",
+        "Photography",
+        "Entertainment"
+      ],
+      "customization": "Fully customizable to suit your preferences",
+      "availability": "Available year-round",
+      "testimonials": [
+        "Our wedding was perfect, thanks to their attention to detail!",
+        "Highly recommended wedding planning services!"
+      ],
+      "booking_process": "Book online or schedule an in-person consultation",
+      "payment_options": "Credit card, PayPal, deposit required",
+      "cancellation_policy": "Cancellation with full refund allowed up to 30 days before the event",
+      "contact_information": {
+        "phone": "123-456-7890",
+        "email": "weddings@example.com",
+        "address": "123 Main St, City, State"
       },
-      {
-        "id": 2,
-        "name": "Birthday Party Package",
-        "image": "https://i.ibb.co/dDrKwhC/birthday.jpg",
-        "price": 300,
-        "description": "Celebrate your special day with our all-inclusive birthday party package, including decorations and entertainment."
+      "additional_add_ons": [
+        "Photo booth",
+        "DJ services",
+        "Videographer"
+      ],
+      "faqs": [
+        {
+          "question": "Can we choose our own menu for catering?",
+          "answer": "Yes, you can customize the catering menu to your preferences."
+        },
+        {
+          "question": "Is there a minimum guest count for this package?",
+          "answer": "No, we can accommodate events of all sizes."
+        }
+      ],
+      "gallery_images": [
+        "https://i.ibb.co/image1.jpg",
+        "https://i.ibb.co/image2.jpg",
+        "https://i.ibb.co/image3.jpg"
+      ],
+      "social_media_links": {
+        "facebook": "https://www.facebook.com/weddingplanners",
+        "instagram": "https://www.instagram.com/weddingplanners"
       },
-      {
-        "id": 3,
-        "name": "Retirement Celebration",
-        "image": "https://i.ibb.co/3zMVgWK/retirement.jpg",
-        "price": 800,
-        "description": "Celebrate retirement in style with our specially designed retirement celebration package."
+      "reviews_and_ratings": {
+        "yelp": "https://www.yelp.com/business/wedding-planning",
+        "google": "https://www.google.com/maps/wedding-planning/reviews"
       },
-      {
-        "id": 4,
-        "name": "Anniversary Celebration",
-        "image": "https://i.ibb.co/ScrKTh4/anniversary.jpg",
-        "price": 400,
-        "description": "Make your anniversary memorable with our anniversary celebration package, including romantic setups."
+      "upcoming_events": [
+        {
+          "name": "Bridal Expo 2023",
+          "date": "2023-11-15",
+          "location": "Exhibition Center, City"
+        },
+        {
+          "name": "Wedding Showcase 2024",
+          "date": "2024-02-20",
+          "location": "Grand Hotel Ballroom, City"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Birthday Party Package",
+      "image": "https://i.ibb.co/dDrKwhC/birthday.jpg",
+      "price": 300,
+      "description": "Celebrate your special day with our all-inclusive birthday party package, including decorations and entertainment.",
+      "duration": "4 hours of celebration",
+      "venue_options": "Indoor and outdoor venue options available",
+      "included_services": [
+        "Decorations",
+        "Entertainment",
+        "Cake and refreshments"
+      ],
+      "customization": "Customize the theme and decorations to your liking",
+      "availability": "Available year-round",
+      "testimonials": [
+        "Our daughter's birthday was a blast! Thanks to the amazing party package.",
+        "Highly recommended for stress-free birthday celebrations!"
+      ],
+      "booking_process": "Book online or call our party planning team",
+      "payment_options": "Credit card, PayPal",
+      "cancellation_policy": "Cancellation with full refund allowed up to 7 days before the party",
+      "contact_information": {
+        "phone": "555-123-4567",
+        "email": "birthday@example.com",
+        "address": "456 Party Ave, City, State"
       },
-      {
-        "id": 5,
-        "name": "Baby Shower Planning",
-        "image": "https://i.ibb.co/GRFLT5X/baby.jpg",
-        "price": 250,
-        "description": "Welcome the new addition to your family with a beautifully organized baby shower."
+      "additional_add_ons": [
+        "Photographer",
+        "Balloon artists",
+        "Face painting"
+      ],
+      "faqs": [
+        {
+          "question": "Can we bring our own cake?",
+          "answer": "Yes, you are welcome to bring your own cake."
+        },
+        {
+          "question": "Is there a minimum guest count for this package?",
+          "answer": "No, we can accommodate small and large parties."
+        }
+      ],
+      "gallery_images": [
+        "https://i.ibb.co/image4.jpg",
+        "https://i.ibb.co/image5.jpg",
+        "https://i.ibb.co/image6.jpg"
+      ],
+      "social_media_links": {
+        "facebook": "https://www.facebook.com/birthdaypartyplanners",
+        "instagram": "https://www.instagram.com/birthdaypartyplanners"
       },
-      {
-        "id": 6,
-        "name": "Holiday Party Services",
-        "image": "https://i.ibb.co/b13FhQZ/holiday.jpg",
-        "price": 500,
-        "description": "Spread holiday cheer with our holiday party services, featuring festive decorations and catering."
-      }
-    ]
-  
-  
+      "reviews_and_ratings": {
+        "yelp": "https://www.yelp.com/business/birthday-party-package",
+        "google": "https://www.google.com/maps/birthday-party-package/reviews"
+      },
+      "upcoming_events": []
+    },
+    {
+      "id": 3,
+      "name": "Retirement Celebration",
+      "image": "https://i.ibb.co/3zMVgWK/retirement.jpg",
+      "price": 800,
+      "description": "Celebrate retirement in style with our specially designed retirement celebration package.",
+      "duration": "Evening retirement party",
+      "venue_options": "Indoor banquet halls",
+      "included_services": [
+        "Decorations",
+        "Catering",
+        "Live music"
+      ],
+      "customization": "Personalize the theme and music selection",
+      "availability": "Available year-round",
+      "testimonials": [
+        "My retirement party was a night to remember! Thanks to the retirement celebration package.",
+        "Highly recommended for retirement parties!"
+      ],
+      "booking_process": "Book by phone or email",
+      "payment_options": "Credit card, check",
+      "cancellation_policy": "Cancellation with full refund allowed up to 14 days before the event",
+      "contact_information": {
+        "phone": "789-555-1234",
+        "email": "retirement@example.com",
+        "address": "789 Retirement Lane, City, State"
+      },
+      "additional_add_ons": [
+        "Speechwriter",
+        "Photographer"
+      ],
+      "faqs": [
+        {
+          "question": "Can we bring our own music playlist?",
+          "answer": "Yes, you can provide your own music playlist for the party."
+        },
+        {
+          "question": "Is there a minimum guest count for this package?",
+          "answer": "No, we can host intimate or large retirement celebrations."
+        }
+      ],
+      "gallery_images": [
+        "https://i.ibb.co/image7.jpg",
+        "https://i.ibb.co/image8.jpg",
+        "https://i.ibb.co/image9.jpg"
+      ],
+      "social_media_links": {
+        "facebook": "https://www.facebook.com/retirementcelebrations",
+        "instagram": "https://www.instagram.com/retirementcelebrations"
+      },
+      "reviews_and_ratings": {
+        "yelp": "https://www.yelp.com/business/retirement-celebration",
+        "google": "https://www.google.com/maps/retirement-celebration/reviews"
+      },
+      "upcoming_events": []
+    },
+    {
+      "id": 4,
+      "name": "Anniversary Celebration",
+      "image": "https://i.ibb.co/ScrKTh4/anniversary.jpg",
+      "price": 400,
+      "description": "Make your anniversary memorable with our anniversary celebration package, including romantic setups.",
+      "duration": "Evening anniversary celebration",
+      "venue_options": "Romantic dinner venues",
+      "included_services": [
+        "Romantic setup",
+        "Candlelit dinner",
+        "Live music"
+      ],
+      "customization": "Personalize the setup and music selection",
+      "availability": "Available year-round",
+      "testimonials": [
+        "Our anniversary was a magical evening thanks to the anniversary celebration package.",
+        "Highly recommended for romantic celebrations!"
+      ],
+      "booking_process": "Book by phone or email",
+      "payment_options": "Credit card, check",
+      "cancellation_policy": "Cancellation with full refund allowed up to 7 days before the event",
+      "contact_information": {
+        "phone": "555-987-6543",
+        "email": "anniversary@example.com",
+        "address": "123 Romantic Lane, City, State"
+      },
+      "additional_add_ons": [
+        "Photographer",
+        "Champagne service"
+      ],
+      "faqs": [
+        {
+          "question": "Can we request specific songs for the live music?",
+          "answer": "Yes, you can provide a list of your favorite songs for the live music."
+        },
+        {
+          "question": "Is there a minimum guest count for this package?",
+          "answer": "No, we cater to couples celebrating their special day."
+        }
+      ],
+      "gallery_images": [
+        "https://i.ibb.co/image10.jpg",
+        "https://i.ibb.co/image11.jpg",
+        "https://i.ibb.co/image12.jpg"
+      ],
+      "social_media_links": {
+        "facebook": "https://www.facebook.com/anniversarycelebrations",
+        "instagram": "https://www.instagram.com/anniversarycelebrations"
+      },
+      "reviews_and_ratings": {
+        "yelp": "https://www.yelp.com/business/anniversary-celebration",
+        "google": "https://www.google.com/maps/anniversary-celebration/reviews"
+      },
+      "upcoming_events": []
+    },
+    {
+      "id": 5,
+      "name": "Baby Shower Planning",
+      "image": "https://i.ibb.co/GRFLT5X/baby.jpg",
+      "price": 250,
+      "description": "Welcome the new addition to your family with a beautifully organized baby shower.",
+      "duration": "Afternoon baby shower",
+      "venue_options": "Indoor and outdoor venues",
+      "included_services": [
+        "Decorations",
+        "Catering",
+        "Games and activities"
+      ],
+      "customization": "Choose a baby shower theme and customize decorations",
+      "availability": "Available year-round",
+      "testimonials": [
+        "Our baby shower was a joyous occasion, thanks to the baby shower planning services.",
+        "Highly recommended for expecting parents!"
+      ],
+      "booking_process": "Book online or call our baby shower coordinator",
+      "payment_options": "Credit card, PayPal",
+      "cancellation_policy": "Cancellation with full refund allowed up to 7 days before the event",
+      "contact_information": {
+        "phone": "987-555-3210",
+        "email": "babyshower@example.com",
+        "address": "456 Baby Lane, City, State"
+      },
+      "additional_add_ons": [
+        "Photographer",
+        "Gender reveal surprises"
+      ],
+      "faqs": [
+        {
+          "question": "Can we bring our own baby shower games?",
+          "answer": "Yes, you are welcome to bring your own games."
+        },
+        {
+          "question": "Is there a minimum guest count for this package?",
+          "answer": "No, we can accommodate intimate or large baby showers."
+        }
+      ],
+      "gallery_images": [
+        "https://i.ibb.co/image13.jpg",
+        "https://i.ibb.co/image14.jpg",
+        "https://i.ibb.co/image15.jpg"
+      ],
+      "social_media_links": {
+        "facebook": "https://www.facebook.com/babyshowerplanners",
+        "instagram": "https://www.instagram.com/babyshowerplanners"
+      },
+      "reviews_and_ratings": {
+        "yelp": "https://www.yelp.com/business/baby-shower-planning",
+        "google": "https://www.google.com/maps/baby-shower-planning/reviews"
+      },
+      "upcoming_events": []
+    },
+    {
+      "id": 6,
+      "name": "Holiday Party Services",
+      "image": "https://i.ibb.co/b13FhQZ/holiday.jpg",
+      "price": 500,
+      "description": "Spread holiday cheer with our holiday party services, featuring festive decorations and catering.",
+      "duration": "Evening holiday party",
+      "venue_options": "Indoor and outdoor holiday venues",
+      "included_services": [
+        "Festive decorations",
+        "Catering with holiday menu",
+        "Music and dance floor"
+      ],
+      "customization": "Customize the holiday theme and menu",
+      "availability": "Available during the holiday season",
+      "testimonials": [
+        "Our holiday party was a hit! Thanks to the holiday party services.",
+        "Highly recommended for festive celebrations!"
+      ],
+      "booking_process": "Book online or call our holiday party coordinator",
+      "payment_options": "Credit card, PayPal",
+      "cancellation_policy": "Cancellation with full refund allowed up to 14 days before the event",
+      "contact_information": {
+        "phone": "555-789-0123",
+        "email": "holidayparty@example.com",
+        "address": "789 Festive Lane, City, State"
+      },
+      "additional_add_ons": [
+        "Santa Claus appearance",
+        "Holiday-themed photo booth"
+      ],
+      "faqs": [
+        {
+          "question": "Can we request specific holiday songs for the music?",
+          "answer": "Yes, you can provide a list of your favorite holiday songs."
+        },
+        {
+          "question": "Is there a minimum guest count for this package?",
+          "answer": "No, we can host small and large holiday parties."
+        }
+      ],
+      "gallery_images": [
+        "https://i.ibb.co/image16.jpg",
+        "https://i.ibb.co/image17.jpg",
+        "https://i.ibb.co/image18.jpg"
+      ],
+      "social_media_links": {
+        "facebook": "https://www.facebook.com/holidaypartyplanners",
+        "instagram": "https://www.instagram.com/holidaypartyplanners"
+      },
+      "reviews_and_ratings": {
+        "yelp": "https://www.yelp.com/business/holiday-party-services",
+        "google": "https://www.google.com/maps/holiday-party-services/reviews"
+      },
+      "upcoming_events": []
+    }
+  ]

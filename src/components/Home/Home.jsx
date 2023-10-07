@@ -10,7 +10,6 @@ const Home = () => {
 
     const services = useLoaderData();
 
-    console.log(services);
     return (
         <div className="">
             <Header></Header>

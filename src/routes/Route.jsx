@@ -5,6 +5,8 @@ import Reviews from "../components/Reviews/Reviews";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 
+import ServiceDetails from "../components/ServiceDetails/ServiceDetails";
+
 const myCreatedRoute = createBrowserRouter([
     {
         path: '/',
@@ -23,6 +25,11 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path: '/register',
                 element: <Registration></Registration>
+            },
+            {
+                path: '/ServiceDetails/:id',
+                element: <ServiceDetails></ServiceDetails>,
+                loader: ()=> fetch('/data.json')
             }
             
         ]
