@@ -1,12 +1,55 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../firebase/AuthProvider";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Registration = () => {
+
+    const {createUser} = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
+    const handleCreateUser = (e) => {
+        e.preventDefault();
+        console.log("btn clicked");
+        let name = e.target.name.value;
+        let photoURL = e.target.photoURL.value;
+        let email = e.target.email.value;
+        let password = e.target.password.value;
+
+        const regex = /^[^A-Z]*$/;
+        const regex2 = /^[a-zA-Z0-9\s]*$/;
+        if(password.length < 6) {
+            toast.error("Password must be at least 6 characters");
+            return;
+        }
+        else if(regex.test(password)) {
+            toast.error("Password must contain a Capital letter");
+            return;
+        }
+        else if(regex2.test(password)) {
+            toast.error("Password should contain a Special Character");
+            return;
+        }
+        createUser(email, password)
+        .then(res => {
+            toast.success("User created successfully");
+            navigate('/login');
+
+              
+        })
+        .catch(err => {
+            toast.error(err.message)
+        })
+
+    }
+
     return (
         <div className="flex  bg-gradient-to-r from-green-200 via-blue-100 to-green-100 py-9 ">
         <div className="m-auto">
           <div className="max-w-md w-full space-y-8 p-8 bg-orange-200 bg-opacity-80 rounded-lg shadow-lg">
             <h2 className="text-3xl font-semibold text-center text-gray-800">Register</h2>
-            <form  className="mt-8 space-y-6">
+            <form onSubmit={handleCreateUser} className="mt-8 space-y-6">
               <div>
                 <label htmlFor="name" className="block text-gray-800">Name</label>
                 <input

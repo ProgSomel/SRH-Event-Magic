@@ -57,7 +57,7 @@ const Login = () => {
                 Login
               </button>
               <p className='text-center mt-3'>Or continue With</p>
-              <p onClick={()=> handleSignIn(signInWithGoogle)} className='flex justify-center mt-2'><FcGoogle></FcGoogle></p>
+              <p onClick={()=> handleSignIn(signInWithGoogle)} className='flex justify-center mt-2 cursor-pointer'><FcGoogle></FcGoogle></p>
             </div>
           </form>
           <p className="text-gray-800 text-center text-sm">
