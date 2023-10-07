@@ -2,43 +2,43 @@
       {
         "id": 1,
         "name": "Wedding Planning",
-        "image": "https://example.com/wedding.jpg",
-        "price": "$2,500 - $5,000",
+        "image": "https://i.ibb.co/mXdhFkT/wedding.jpg",
+        "price": 2500,
         "description": "Let us make your dream wedding a reality. Our expert wedding planners will handle every detail."
       },
       {
         "id": 2,
         "name": "Birthday Party Package",
-        "image": "https://example.com/birthday.jpg",
-        "price": "$300 - $600",
+        "image": "https://i.ibb.co/dDrKwhC/birthday.jpg",
+        "price": 300,
         "description": "Celebrate your special day with our all-inclusive birthday party package, including decorations and entertainment."
       },
       {
         "id": 3,
-        "name": "Corporate Event Management",
-        "image": "https://example.com/corporate.jpg",
-        "price": "$1,000 - $3,000",
-        "description": "Host successful corporate events with our professional event management services, from seminars to conferences."
+        "name": "Retirement Celebration",
+        "image": "https://i.ibb.co/3zMVgWK/retirement.jpg",
+        "price": 800,
+        "description": "Celebrate retirement in style with our specially designed retirement celebration package."
       },
       {
         "id": 4,
         "name": "Anniversary Celebration",
-        "image": "https://example.com/anniversary.jpg",
-        "price": "$400 - $800",
+        "image": "https://i.ibb.co/ScrKTh4/anniversary.jpg",
+        "price": 400,
         "description": "Make your anniversary memorable with our anniversary celebration package, including romantic setups."
       },
       {
         "id": 5,
         "name": "Baby Shower Planning",
-        "image": "https://example.com/babyshower.jpg",
-        "price": "$250 - $500",
+        "image": "https://i.ibb.co/GRFLT5X/baby.jpg",
+        "price": 250,
         "description": "Welcome the new addition to your family with a beautifully organized baby shower."
       },
       {
         "id": 6,
         "name": "Holiday Party Services",
-        "image": "https://example.com/holiday.jpg",
-        "price": "$500 - $1,200",
+        "image": "https://i.ibb.co/b13FhQZ/holiday.jpg",
+        "price": 500,
         "description": "Spread holiday cheer with our holiday party services, featuring festive decorations and catering."
       }
     ]

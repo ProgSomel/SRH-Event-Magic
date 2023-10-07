@@ -3,22 +3,22 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navlinks = (
     <>
-      <li>
+      <li >
         <NavLink to='/'>Home</NavLink>
       </li>
-      <li>
+      <li >
         <NavLink to='/venue'>Venue</NavLink>
       </li>
-      <li>
+      <li >
         <NavLink to='/suppliers'>Suppliers</NavLink>
       </li>
-      <li>
+      <li >
         <NavLink to='/about'>About</NavLink>
       </li>
-      <li>
+      <li >
         <NavLink to='/media'>Media</NavLink>
       </li>
-      <li>
+      <li >
         <NavLink to='/contactUs'>Contact Us</NavLink>
       </li>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-[#D0E7D2] shadow-lg rounded-lg px-3 ">
+    <div className="navbar bg-[#D0E7D2] shadow-lg rounded-lg px-3 " data-aos="zoom-in" data-aos-duration="1000">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
