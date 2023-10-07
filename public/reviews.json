@@ -1,0 +1,51 @@
+ [
+      {
+        "id": 1,
+        "title": "Absolutely Wonderful!",
+        "description": "I had the pleasure of working with this event management team for my wedding, and they exceeded all expectations. The attention to detail was outstanding, and they made our special day truly magical.",
+        "rating": "★★★★★",
+        "date": "2023-09-15",
+        "reviewerImage": "https://i.ibb.co/4g26cBs/reviewer1.jpg",
+        "reviewerName": "Alice Johnson"
+      },
+      {
+        "id": 2,
+        "title": "Best Birthday Party Ever!",
+        "description": "Thanks to the team at this event management company, my daughter's birthday party was a huge success. The decorations, entertainment, and overall coordination were superb. Highly recommended!",
+        "rating": "★★★★★",
+        "date": "2023-08-22",
+        "reviewerImage": "https://i.ibb.co/4g26cBs/reviewer1.jpg",
+        "reviewerName": "John Smith"
+      },
+      {
+        "id": 3,
+        "title": "Retirement Events",
+        "description": "We hired these professionals to organize our retirement celebration, and they delivered an exceptional experience. From the decorations to the entertainment, everything was flawless.",
+        "rating": "★★★★☆",
+        "date": "2023-07-10",
+        "reviewerImage": "https://i.ibb.co/4g26cBs/reviewer1.jpg",
+        "reviewerName": "Emily Turner"
+      }
+      
+      ,
+      {
+        "id": 4,
+        "title": "Anniversary Bliss",
+        "description": "The team made our anniversary celebration truly special. The romantic setup and attention to detail were impressive. We'll cherish the memories forever.",
+        "rating": "★★★★★",
+        "date": "2023-06-05",
+        "reviewerImage": "https://i.ibb.co/4g26cBs/reviewer1.jpg",
+        "reviewerName": "David Martinez"
+      },
+      {
+        "id": 5,
+        "title": "Baby Shower Success",
+        "description": "They organized a fantastic baby shower for us. The decor was adorable, and everyone had a great time. We couldn't be happier with their services.",
+        "rating": "★★★★☆",
+        "date": "2023-05-12",
+        "reviewerImage": "https://i.ibb.co/4g26cBs/reviewer1.jpg",
+        "reviewerName": "Sarah Wilson"
+      }
+    ]
+
+  

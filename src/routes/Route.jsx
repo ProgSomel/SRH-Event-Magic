@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayouts from "../Layouts/MainLayouts";
 import Home from "../components/Home/Home";
+import Reviews from "../components/Reviews/Reviews";
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -10,7 +11,8 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader:()=> fetch('/data.json')
+                loader:()=> fetch('/data.json'),
+                
             },
             
         ]
