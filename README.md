@@ -1,6 +1,6 @@
 
 # Website_Name: SRH Event Magic
-# Live_Link: 
+# Live_Link: https://react-event-management-a-eec9a.web.app/
 
 # 1. Add at least 5 Project features 🔥
 
