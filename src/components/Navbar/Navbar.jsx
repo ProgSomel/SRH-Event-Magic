@@ -1,10 +1,21 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../firebase/AuthProvider";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
 
-  const {user} = useContext(AuthContext);
+  const {user, logout} = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logout()
+    .then( res => {
+      toast.success("Successfully logged out")
+    })
+    .catch(error => {
+      toast.error(error.message)
+    })
+  }
 
   const navlinks = (
     <>
@@ -66,7 +77,8 @@ const Navbar = () => {
       </div>
 
       <div className="flex flex-col md:flex-row  gap-3  ml-8 lg:ml-0">
-        <div className="dropdown dropdown-end">
+        {
+          user &&  <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
               {
@@ -86,13 +98,16 @@ const Navbar = () => {
               </button>
             </li>
             <li>
-              <button className="btn btn-sm  btn-ghost">Logout</button>
+              <button onClick={handleLogOut} className="btn btn-sm  btn-ghost">Logout</button>
             </li>
           </ul>
         </div>
-        <Link to='/login'>
+        }
+        {
+          user ? "" : <Link to='/login'>
         <button className="btn">Login</button>
-        </Link>
+        </Link> 
+        }
       </div>
       
     </div>
