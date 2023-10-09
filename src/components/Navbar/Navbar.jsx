@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../firebase/AuthProvider";
 
 const Navbar = () => {
+
+  const {user} = useContext(AuthContext);
+
   const navlinks = (
     <>
       <li >
@@ -64,7 +69,9 @@ const Navbar = () => {
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="https://media.licdn.com/dms/image/D5603AQGaIXLnPtBtaQ/profile-displayphoto-shrink_800_800/0/1674055812932?e=2147483647&v=beta&t=mlsNDLmsaK-6Szjw0JqzhbfZKTEkFmaFidAsaTNp8GY" />
+              {
+                user && <img src={user.photoURL} alt="" />
+              }
             </div>
           </label>
           <ul
@@ -72,7 +79,11 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <button className="btn btn-sm  btn-ghost">User name</button>
+              <button className="btn btn-sm  btn-ghost">
+                {
+                  user && user.displayName
+                }
+              </button>
             </li>
             <li>
               <button className="btn btn-sm  btn-ghost">Logout</button>
