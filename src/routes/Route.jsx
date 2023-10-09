@@ -7,11 +7,14 @@ import Registration from "../Pages/Registration/Registration";
 
 import ServiceDetails from "../components/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const myCreatedRoute = createBrowserRouter([
     {
         path: '/',
         element: <MainLayouts></MainLayouts>,
+        errorElement: <ErrorPage></ErrorPage>,
+
         children: [
             {
                 path: '/',
