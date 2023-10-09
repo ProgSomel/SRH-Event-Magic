@@ -37,13 +37,14 @@ const Registration = () => {
             updateUserProfile(name, photoURL)
             .then((res) => {
                 toast.success("user created successfully")
-                navigate('/login')
                 toast(
                   "Now Please Login",
                   {
                     duration: 6000,
                   }
                 );
+                navigate('/login')
+                
             })
         })
         .catch(err => {
