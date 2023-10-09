@@ -1,19 +1,20 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
 import { getAuth } from "firebase/auth";
+// TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAgO5JsjiJOSaHfq8yVChoPk4y-krHfgp0",
-  authDomain: "react-event-management-auth.firebaseapp.com",
-  projectId: "react-event-management-auth",
-  storageBucket: "react-event-management-auth.appspot.com",
-  messagingSenderId: "933070186920",
-  appId: "1:933070186920:web:74400f54f5f36bc5bf559d"
+  apiKey: "AIzaSyBnjBrBq-MD3WX6TS5Z-S3T6mBEXigt2CA",
+  authDomain: "react-event-management-a-eec9a.firebaseapp.com",
+  projectId: "react-event-management-a-eec9a",
+  storageBucket: "react-event-management-a-eec9a.appspot.com",
+  messagingSenderId: "301500126426",
+  appId: "1:301500126426:web:e9366db5f0dd321a2601e3"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 export const auth = getAuth(app);
