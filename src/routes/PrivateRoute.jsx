@@ -4,6 +4,7 @@ import { AuthContext } from "../firebase/AuthProvider";
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
+  console.log(user);
 
   if (loading) {
     return (

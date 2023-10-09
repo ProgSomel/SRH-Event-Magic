@@ -1,4 +1,5 @@
 import { key } from "localforage";
+import toast from "react-hot-toast";
 
 const ServiceDetail = ({ service }) => {
   const {
@@ -20,6 +21,36 @@ const ServiceDetail = ({ service }) => {
     social_media_links,
     upcoming_events,
   } = service;
+
+
+  const handleBookingBtn = () => {
+    const itemAddedToBooking = [];
+    const itemFromBooking = JSON.parse(localStorage.getItem('booking'));
+
+    if(!itemFromBooking) {
+      itemAddedToBooking.push(service);
+      localStorage.setItem('booking', JSON.stringify(itemAddedToBooking));
+      toast('Good Job! Your Booking is Done', {
+        icon: '👏',
+      });
+
+    }
+    else {
+      const isExists = itemFromBooking.find(item => item.id === id);
+      if(isExists) {
+        toast.error(`You have already booked ${name}`)
+      }
+      else {
+         itemAddedToBooking.push(...itemFromBooking, service);
+
+         localStorage.setItem('booking', JSON.stringify(itemAddedToBooking))
+         toast('Good Job! Your Booking is Done', {
+          icon: '👏',
+        });
+      }
+    }
+  }
+
   return (
     <div
       className="max-w-screen-xl h-screen text-center italic  mx-auto px-4  md:px-16 lg:px-16"
@@ -173,6 +204,7 @@ const ServiceDetail = ({ service }) => {
               </div>
             ))}
           </div>
+          <button onClick={handleBookingBtn} className="btn btn-accent mb-2 text-white font-bold italic">Book Event</button>
         </div>
       </div>
     </div>

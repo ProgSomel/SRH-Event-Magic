@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Registration = () => {
 
-    const {createUser} = useContext(AuthContext);
+    const {createUser, updateUserProfile} = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -31,17 +31,24 @@ const Registration = () => {
             toast.error("Password should contain a Special Character");
             return;
         }
-        createUser(email, password)
-        .then(res => {
-            toast.success("User created successfully");
-            navigate('/login');
 
-              
+        createUser( email, password)
+        .then(res => {
+            updateUserProfile(name, photoURL)
+            .then((res) => {
+                toast.success("user created successfully")
+                navigate('/login')
+                toast(
+                  "Now Please Login",
+                  {
+                    duration: 6000,
+                  }
+                );
+            })
         })
         .catch(err => {
             toast.error(err.message)
         })
-
     }
 
     return (

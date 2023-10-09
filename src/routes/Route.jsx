@@ -8,6 +8,8 @@ import Registration from "../Pages/Registration/Registration";
 import ServiceDetails from "../components/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import MyBookings from "../Pages/MyBookings/MyBookings";
+import ContactUS from "../Pages/ContactUS/ContactUS";
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -36,6 +38,14 @@ const myCreatedRoute = createBrowserRouter([
                     <ServiceDetails></ServiceDetails>
                 </PrivateRoute>,
                 loader: ()=> fetch('/data.json')
+            },
+            {
+                path: '/mybooking',
+                element: <PrivateRoute><MyBookings></MyBookings></PrivateRoute>
+            },
+            {
+                path: 'contactus',
+                element: <ContactUS></ContactUS>
             }
             
         ]

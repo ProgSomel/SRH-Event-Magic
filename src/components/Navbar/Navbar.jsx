@@ -22,20 +22,15 @@ const Navbar = () => {
       <li >
         <NavLink to='/'>Home</NavLink>
       </li>
-      <li >
-        <NavLink to='/venue'>Venue</NavLink>
-      </li>
-      <li >
-        <NavLink to='/suppliers'>Suppliers</NavLink>
-      </li>
+      
       <li >
         <NavLink to='/about'>About</NavLink>
       </li>
       <li >
-        <NavLink to='/media'>Media</NavLink>
+        <NavLink to='/contactUs'>Contact Us</NavLink>
       </li>
       <li >
-        <NavLink to='/contactUs'>Contact Us</NavLink>
+        <NavLink to='/mybooking'>My Booking</NavLink>
       </li>
 
       
