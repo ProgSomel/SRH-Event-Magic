@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import MyBookings from "../Pages/MyBookings/MyBookings";
 import ContactUS from "../Pages/ContactUS/ContactUS";
+import About from "../Pages/About/About";
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path: 'contactus',
                 element: <ContactUS></ContactUS>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             }
             
         ]
